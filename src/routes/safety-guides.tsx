@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PageShell, FeatureCard, CalloutDisclaimer } from "@/components/site";
-import { Home, GraduationCap, Plane, Wifi, Heart, ShieldCheck, ArrowRight } from "lucide-react";
+import { PageShell, CalloutDisclaimer } from "@/components/site";
+import { Home, GraduationCap, Plane, Wifi, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/safety-guides")({
   head: () => ({
