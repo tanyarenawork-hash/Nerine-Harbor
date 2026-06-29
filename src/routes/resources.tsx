@@ -175,6 +175,21 @@ function Resources() {
       </div>
 
       <CalloutDisclaimer />
+
+      <div className="mt-8 border-t border-border pt-8 text-xs text-muted-foreground leading-relaxed space-y-3">
+        <p>
+          <strong className="text-charcoal/80">Legal Disclaimer</strong>
+        </p>
+        <p>
+          Nerine Harbor is an independent educational organization and is not affiliated with, endorsed by, or sponsored by any of the external organizations linked on this page. Links are provided for informational purposes only and do not constitute legal, medical, or professional advice.
+        </p>
+        <p>
+          Nerine Harbor does not provide emergency response, legal representation, medical diagnosis or treatment, or counseling services. If you are experiencing an emergency, are in immediate danger, or require legal, medical, or psychological assistance, please contact 911 or your local emergency services and consult a qualified professional.
+        </p>
+        <p>
+          All content on this site is for educational and informational purposes only. Nerine Harbor makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, or suitability of the information contained herein.
+        </p>
+      </div>
     </PageShell>
   );
 }
