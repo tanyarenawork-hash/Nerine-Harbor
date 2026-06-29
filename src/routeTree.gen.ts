@@ -14,6 +14,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SafetyGuidesRouteImport } from './routes/safety-guides'
 import { Route as ResourcesRouteImport } from './routes/resources'
 import { Route as PreparednessRouteImport } from './routes/preparedness'
+import { Route as LegalRouteImport } from './routes/legal'
 import { Route as EmergencyContactsRouteImport } from './routes/emergency-contacts'
 import { Route as DigitalSafetyRouteImport } from './routes/digital-safety'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -44,6 +45,11 @@ const ResourcesRoute = ResourcesRouteImport.update({
 const PreparednessRoute = PreparednessRouteImport.update({
   id: '/preparedness',
   path: '/preparedness',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRoute = LegalRouteImport.update({
+  id: '/legal',
+  path: '/legal',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EmergencyContactsRoute = EmergencyContactsRouteImport.update({
@@ -84,6 +90,7 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/digital-safety': typeof DigitalSafetyRoute
   '/emergency-contacts': typeof EmergencyContactsRoute
+  '/legal': typeof LegalRoute
   '/preparedness': typeof PreparednessRoute
   '/resources': typeof ResourcesRoute
   '/safety-guides': typeof SafetyGuidesRoute
@@ -97,6 +104,7 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/digital-safety': typeof DigitalSafetyRoute
   '/emergency-contacts': typeof EmergencyContactsRoute
+  '/legal': typeof LegalRoute
   '/preparedness': typeof PreparednessRoute
   '/resources': typeof ResourcesRoute
   '/safety-guides': typeof SafetyGuidesRoute
@@ -111,6 +119,7 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/digital-safety': typeof DigitalSafetyRoute
   '/emergency-contacts': typeof EmergencyContactsRoute
+  '/legal': typeof LegalRoute
   '/preparedness': typeof PreparednessRoute
   '/resources': typeof ResourcesRoute
   '/safety-guides': typeof SafetyGuidesRoute
@@ -126,6 +135,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/digital-safety'
     | '/emergency-contacts'
+    | '/legal'
     | '/preparedness'
     | '/resources'
     | '/safety-guides'
@@ -139,6 +149,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/digital-safety'
     | '/emergency-contacts'
+    | '/legal'
     | '/preparedness'
     | '/resources'
     | '/safety-guides'
@@ -152,6 +163,7 @@ export interface FileRouteTypes {
     | '/contact'
     | '/digital-safety'
     | '/emergency-contacts'
+    | '/legal'
     | '/preparedness'
     | '/resources'
     | '/safety-guides'
@@ -166,6 +178,7 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DigitalSafetyRoute: typeof DigitalSafetyRoute
   EmergencyContactsRoute: typeof EmergencyContactsRoute
+  LegalRoute: typeof LegalRoute
   PreparednessRoute: typeof PreparednessRoute
   ResourcesRoute: typeof ResourcesRoute
   SafetyGuidesRoute: typeof SafetyGuidesRoute
@@ -208,6 +221,13 @@ declare module '@tanstack/react-router' {
       path: '/preparedness'
       fullPath: '/preparedness'
       preLoaderRoute: typeof PreparednessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal': {
+      id: '/legal'
+      path: '/legal'
+      fullPath: '/legal'
+      preLoaderRoute: typeof LegalRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/emergency-contacts': {
@@ -262,6 +282,7 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DigitalSafetyRoute: DigitalSafetyRoute,
   EmergencyContactsRoute: EmergencyContactsRoute,
+  LegalRoute: LegalRoute,
   PreparednessRoute: PreparednessRoute,
   ResourcesRoute: ResourcesRoute,
   SafetyGuidesRoute: SafetyGuidesRoute,
