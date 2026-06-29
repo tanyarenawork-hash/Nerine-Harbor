@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { Scale } from "lucide-react";
 import { useState } from "react";
 import { Menu, X, Anchor } from "lucide-react";
 
