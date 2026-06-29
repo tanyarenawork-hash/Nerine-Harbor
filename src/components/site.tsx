@@ -1,5 +1,4 @@
 import { Link } from "@tanstack/react-router";
-import { Scale } from "lucide-react";
 import { useState } from "react";
 import { Menu, X, Anchor } from "lucide-react";
 
@@ -122,19 +121,6 @@ export function SiteFooter() {
             <li><Link to="/emergency-contacts" className="text-muted-foreground hover:text-foreground">Emergency Contacts</Link></li>
             <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
           </ul>
-        </div>
-      </div>
-      <div className="border-t border-border bg-background/50">
-        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-8">
-          <div className="flex items-start gap-3">
-            <Scale className="h-4 w-4 text-muted-foreground shrink-0 mt-0.5" strokeWidth={1.5} />
-            <div className="text-xs text-muted-foreground leading-relaxed text-balance space-y-1">
-              <p><strong className="text-charcoal/80">Legal Disclaimer:</strong> Nerine Harbor is an independent educational organization. The content provided on this website is for informational and educational purposes only and does not constitute legal, medical, psychological, or professional advice.</p>
-              <p>Nerine Harbor is not a law enforcement agency, emergency response organization, counseling service, legal service provider, or healthcare provider. Nothing on this site should be interpreted as creating an attorney-client, therapist-patient, or doctor-patient relationship.</p>
-              <p>By using this website, you acknowledge and agree that Nerine Harbor, its contributors, and affiliates shall not be held liable for any actions taken or not taken based on the information provided herein. All liability is expressly disclaimed to the fullest extent permitted by law.</p>
-              <p>If you are experiencing an emergency, are in immediate danger, or require legal, medical, or psychological assistance, please contact 911 or your local emergency services immediately.</p>
-            </div>
-          </div>
         </div>
       </div>
       <div className="border-t border-border">

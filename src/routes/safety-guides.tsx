@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PageShell, CalloutDisclaimer } from "@/components/site";
-import { Home, GraduationCap, Plane, Wifi, ArrowRight } from "lucide-react";
+import { PageShell, FeatureCard, CalloutDisclaimer } from "@/components/site";
+import { Home, GraduationCap, Plane, Wifi, Heart, ShieldCheck, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/safety-guides")({
   head: () => ({
@@ -19,6 +19,8 @@ const guides = [
   { to: "/campus-safety", icon: GraduationCap, title: "Campus Safety", body: "Dorm life, late-night study, transit, and social environments." },
   { to: "/travel-safety", icon: Plane, title: "Travel Safety", body: "Solo, group, and international travel preparation." },
   { to: "/digital-safety", icon: Wifi, title: "Digital Privacy", body: "Accounts, passwords, devices, and social presence." },
+  { to: "/safety-guides", icon: Heart, title: "Healthy Relationships", body: "Boundaries, consent, and recognizing patterns of concern." },
+  { to: "/safety-guides", icon: ShieldCheck, title: "Personal Safety Foundations", body: "Daily awareness, situational thinking, and trusting your instincts." },
 ] as const;
 
 function SafetyGuides() {
@@ -43,6 +45,13 @@ function SafetyGuides() {
             </div>
           </Link>
         ))}
+      </div>
+
+      <div className="mt-16 surface-card p-8">
+        <h3 className="font-display text-2xl text-charcoal">Healthy Relationships</h3>
+        <p className="mt-3 text-foreground/85 leading-relaxed">
+          Educational material on boundaries, consent, communication, and recognizing patterns of concern. If a situation feels unsafe or harmful, please reach out to a qualified professional or hotline — see our <Link to="/emergency-contacts" className="underline underline-offset-4">Emergency Contacts</Link> page.
+        </p>
       </div>
 
       <CalloutDisclaimer />
