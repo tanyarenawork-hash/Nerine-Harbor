@@ -178,19 +178,13 @@ function Resources() {
         <div className="text-xs uppercase tracking-wider text-charcoal/70">About these resources</div>
         <div className="mt-3 text-sm text-charcoal/85 leading-relaxed max-w-3xl space-y-3">
           <p>
-            <strong>No endorsement.</strong> Nerine Harbor does not endorse, recommend, or guarantee any specific organization, service, or outcome listed here. Links are provided solely for educational convenience.
+            We share these links because they come from well-established organizations that do important safety and education work. We are not sponsored by, affiliated with, or in formal collaboration with any of them — we simply believe they are trustworthy starting points worth knowing about.
           </p>
           <p>
-            <strong>Independent content.</strong> We do not control, review, or assume responsibility for the content, privacy practices, or accuracy of third-party websites. Their views and policies are their own.
+            We do not control or review their content, privacy practices, or policies, and information can change over time. If something here matters to your situation, please verify details directly with the organization.
           </p>
           <p>
-            <strong>No partnership.</strong> Inclusion in this directory does not imply a formal partnership, sponsorship, or affiliation with Nerine Harbor.
-          </p>
-          <p>
-            <strong>Accuracy.</strong> While we aim to share reliable starting points, information changes. Please verify details directly with the organization before acting on any guidance.
-          </p>
-          <p>
-            <strong>Not a substitute.</strong> These resources are educational pointers only. They do not replace professional legal, medical, psychological, or emergency services. If you are in immediate danger, please call 911 or your local emergency number.
+            These resources are educational pointers only. They do not replace professional legal, medical, psychological, or emergency services. If you are in immediate danger, please call 911 or your local emergency number.
           </p>
         </div>
       </div>
