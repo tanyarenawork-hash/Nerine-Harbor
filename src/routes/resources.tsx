@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { PageShell, CalloutDisclaimer } from "@/components/site";
+import { PageShell } from "@/components/site";
 import { ExternalLink, Download } from "lucide-react";
 
 export const Route = createFileRoute("/resources")({
@@ -167,29 +167,45 @@ function Resources() {
       </div>
 
       <div className="mt-12 rounded-3xl border border-border bg-gold-soft/50 p-8">
-        <div className="text-xs uppercase tracking-wider text-charcoal/70">Directory note</div>
-        <p className="mt-2 text-sm text-charcoal/85 leading-relaxed max-w-3xl">
-          We link to established, reputable organizations for services we don't provide ourselves —
-          including counseling, legal aid, victim advocacy, and emergency response. External links open in a new tab.
+        <div className="text-xs uppercase tracking-wider text-charcoal/70">Directory Note</div>
+        <p className="mt-3 text-sm text-charcoal/85 leading-relaxed max-w-3xl">
+          Nerine Harbor provides links to established organizations for educational and informational purposes only. These organizations operate independently of Nerine Harbor and are not controlled by us. External links will open in a new tab.
         </p>
       </div>
 
       <div className="mt-6 rounded-3xl border border-border bg-rose-soft/50 p-8">
-        <div className="text-xs uppercase tracking-wider text-charcoal/70">About these resources</div>
+        <div className="text-xs uppercase tracking-wider text-charcoal/70">About These Resources</div>
         <div className="mt-3 text-sm text-charcoal/85 leading-relaxed max-w-3xl space-y-3">
           <p>
-            We share these links because they come from well-established organizations that do important safety and education work. We are not sponsored by, affiliated with, or in formal collaboration with any of them — we simply believe they are trustworthy starting points worth knowing about.
+            The organizations listed on this page were selected because they provide educational resources, support services, or public information that may be helpful to our visitors.
           </p>
           <p>
-            We do not control or review their content, privacy practices, or policies, and information can change over time. If something here matters to your situation, please verify details directly with the organization.
+            Unless explicitly stated, Nerine Harbor is not affiliated with, endorsed by, sponsored by, or in formal partnership with any organization listed.
           </p>
           <p>
-            These resources are educational pointers only. They do not replace professional legal, medical, psychological, or emergency services. If you are in immediate danger, please call 911 or your local emergency number.
+            We do not control, monitor, review, or guarantee the accuracy, completeness, availability, privacy practices, security, or policies of any third-party website. Information may change without notice. Please verify important information directly with the organization providing it.
+          </p>
+          <p>
+            The information and external resources provided by Nerine Harbor are intended solely for educational and informational purposes. They do not constitute legal advice, medical advice, mental health treatment, counseling, emergency response, or any other professional service.
           </p>
         </div>
       </div>
 
-      <CalloutDisclaimer />
+      <div className="mt-6 rounded-2xl border border-rose/40 bg-rose-soft/60 p-6 text-sm text-charcoal/85 leading-relaxed space-y-3">
+        <p className="font-medium text-charcoal">Important Reminder</p>
+        <p>
+          Nerine Harbor is an educational platform. We do not provide emergency response services, legal advice, medical care, mental health services, counseling, victim advocacy, or professional crisis intervention.
+        </p>
+        <p>
+          Nothing on this website should be interpreted as professional advice or as a substitute for qualified assistance from licensed professionals.
+        </p>
+        <p>
+          If you believe you are in immediate danger or are experiencing an emergency, call <strong>911</strong> (or your local emergency services) immediately.
+        </p>
+        <p>
+          If you need legal, medical, psychological, or counseling assistance, please contact a qualified licensed professional or an appropriate local organization.
+        </p>
+      </div>
     </PageShell>
   );
 }
