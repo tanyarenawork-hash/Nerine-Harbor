@@ -19,8 +19,6 @@ const guides = [
   { to: "/campus-safety", icon: GraduationCap, title: "Campus Safety", body: "Dorm life, late-night study, transit, and social environments." },
   { to: "/travel-safety", icon: Plane, title: "Travel Safety", body: "Solo, group, and international travel preparation." },
   { to: "/digital-safety", icon: Wifi, title: "Digital Privacy", body: "Accounts, passwords, devices, and social presence." },
-  { to: "/safety-guides", icon: Heart, title: "Healthy Relationships", body: "Boundaries, consent, and recognizing patterns of concern." },
-  { to: "/safety-guides", icon: ShieldCheck, title: "Personal Safety Foundations", body: "Daily awareness, situational thinking, and trusting your instincts." },
 ] as const;
 
 function SafetyGuides() {
