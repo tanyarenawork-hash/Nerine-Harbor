@@ -9,8 +9,68 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TravelSafetyRouteImport } from './routes/travel-safety'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as SafetyGuidesRouteImport } from './routes/safety-guides'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as PreparednessRouteImport } from './routes/preparedness'
+import { Route as EmergencyContactsRouteImport } from './routes/emergency-contacts'
+import { Route as DigitalSafetyRouteImport } from './routes/digital-safety'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CampusSafetyRouteImport } from './routes/campus-safety'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TravelSafetyRoute = TravelSafetyRouteImport.update({
+  id: '/travel-safety',
+  path: '/travel-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafetyGuidesRoute = SafetyGuidesRouteImport.update({
+  id: '/safety-guides',
+  path: '/safety-guides',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreparednessRoute = PreparednessRouteImport.update({
+  id: '/preparedness',
+  path: '/preparedness',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyContactsRoute = EmergencyContactsRouteImport.update({
+  id: '/emergency-contacts',
+  path: '/emergency-contacts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalSafetyRoute = DigitalSafetyRouteImport.update({
+  id: '/digital-safety',
+  path: '/digital-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CampusSafetyRoute = CampusSafetyRouteImport.update({
+  id: '/campus-safety',
+  path: '/campus-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +79,172 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/campus-safety': typeof CampusSafetyRoute
+  '/contact': typeof ContactRoute
+  '/digital-safety': typeof DigitalSafetyRoute
+  '/emergency-contacts': typeof EmergencyContactsRoute
+  '/preparedness': typeof PreparednessRoute
+  '/resources': typeof ResourcesRoute
+  '/safety-guides': typeof SafetyGuidesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/travel-safety': typeof TravelSafetyRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/campus-safety': typeof CampusSafetyRoute
+  '/contact': typeof ContactRoute
+  '/digital-safety': typeof DigitalSafetyRoute
+  '/emergency-contacts': typeof EmergencyContactsRoute
+  '/preparedness': typeof PreparednessRoute
+  '/resources': typeof ResourcesRoute
+  '/safety-guides': typeof SafetyGuidesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/travel-safety': typeof TravelSafetyRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/campus-safety': typeof CampusSafetyRoute
+  '/contact': typeof ContactRoute
+  '/digital-safety': typeof DigitalSafetyRoute
+  '/emergency-contacts': typeof EmergencyContactsRoute
+  '/preparedness': typeof PreparednessRoute
+  '/resources': typeof ResourcesRoute
+  '/safety-guides': typeof SafetyGuidesRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/travel-safety': typeof TravelSafetyRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/campus-safety'
+    | '/contact'
+    | '/digital-safety'
+    | '/emergency-contacts'
+    | '/preparedness'
+    | '/resources'
+    | '/safety-guides'
+    | '/sitemap.xml'
+    | '/travel-safety'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/campus-safety'
+    | '/contact'
+    | '/digital-safety'
+    | '/emergency-contacts'
+    | '/preparedness'
+    | '/resources'
+    | '/safety-guides'
+    | '/sitemap.xml'
+    | '/travel-safety'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/campus-safety'
+    | '/contact'
+    | '/digital-safety'
+    | '/emergency-contacts'
+    | '/preparedness'
+    | '/resources'
+    | '/safety-guides'
+    | '/sitemap.xml'
+    | '/travel-safety'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CampusSafetyRoute: typeof CampusSafetyRoute
+  ContactRoute: typeof ContactRoute
+  DigitalSafetyRoute: typeof DigitalSafetyRoute
+  EmergencyContactsRoute: typeof EmergencyContactsRoute
+  PreparednessRoute: typeof PreparednessRoute
+  ResourcesRoute: typeof ResourcesRoute
+  SafetyGuidesRoute: typeof SafetyGuidesRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TravelSafetyRoute: typeof TravelSafetyRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/travel-safety': {
+      id: '/travel-safety'
+      path: '/travel-safety'
+      fullPath: '/travel-safety'
+      preLoaderRoute: typeof TravelSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safety-guides': {
+      id: '/safety-guides'
+      path: '/safety-guides'
+      fullPath: '/safety-guides'
+      preLoaderRoute: typeof SafetyGuidesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preparedness': {
+      id: '/preparedness'
+      path: '/preparedness'
+      fullPath: '/preparedness'
+      preLoaderRoute: typeof PreparednessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-contacts': {
+      id: '/emergency-contacts'
+      path: '/emergency-contacts'
+      fullPath: '/emergency-contacts'
+      preLoaderRoute: typeof EmergencyContactsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-safety': {
+      id: '/digital-safety'
+      path: '/digital-safety'
+      fullPath: '/digital-safety'
+      preLoaderRoute: typeof DigitalSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/campus-safety': {
+      id: '/campus-safety'
+      path: '/campus-safety'
+      fullPath: '/campus-safety'
+      preLoaderRoute: typeof CampusSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,17 +257,17 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CampusSafetyRoute: CampusSafetyRoute,
+  ContactRoute: ContactRoute,
+  DigitalSafetyRoute: DigitalSafetyRoute,
+  EmergencyContactsRoute: EmergencyContactsRoute,
+  PreparednessRoute: PreparednessRoute,
+  ResourcesRoute: ResourcesRoute,
+  SafetyGuidesRoute: SafetyGuidesRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TravelSafetyRoute: TravelSafetyRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
