@@ -24,14 +24,14 @@ function About() {
       <div className="grid md:grid-cols-2 gap-10 items-start">
         <div className="space-y-5 text-foreground/85 leading-relaxed">
           <p>
-            <strong className="text-charcoal">Nerine</strong> is a flower that symbolizes resilience, hope, and beauty — qualities we believe live in every woman.
-            <strong className="text-charcoal"> Harbor</strong> represents safety, refuge, and protection — the calm, steady place from which confidence grows.
+            <strong className="text-charcoal">Nerine</strong> symbolizes resilience, hope, and beauty — qualities we see in every woman.
+            <strong className="text-charcoal"> Harbor</strong> is safety, refuge, and protection — the calm place from which confidence grows.
           </p>
           <p>
-            Together, the name reflects our purpose: a calm, trustworthy place to learn practical knowledge that supports your sense of preparedness and well-being.
+            Together, the name reflects our purpose: a calm place to learn practical knowledge that supports your preparedness and well-being.
           </p>
           <p>
-            We believe education is one of the most powerful tools a person can carry. When information is approachable and well-organized, it becomes confidence — and confidence shapes how we move through the world.
+            Education is one of the most powerful tools a person can carry. Clear, well-organized information becomes confidence — and confidence shapes how you move through the world.
           </p>
         </div>
         <div className="surface-card p-8">
