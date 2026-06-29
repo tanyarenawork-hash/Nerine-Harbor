@@ -13,6 +13,7 @@ const navLinks = [
   { to: "/resources", label: "Resources" },
   { to: "/emergency-contacts", label: "Emergency Contacts" },
   { to: "/contact", label: "Contact" },
+  { to: "/legal", label: "Legal" },
 ] as const;
 
 export function SiteHeader() {
@@ -120,6 +121,7 @@ export function SiteFooter() {
             <li><Link to="/resources" className="text-muted-foreground hover:text-foreground">Resources</Link></li>
             <li><Link to="/emergency-contacts" className="text-muted-foreground hover:text-foreground">Emergency Contacts</Link></li>
             <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
+            <li><Link to="/legal" className="text-muted-foreground hover:text-foreground">Legal Disclaimer</Link></li>
           </ul>
         </div>
       </div>
@@ -127,7 +129,8 @@ export function SiteFooter() {
         <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6 grid gap-3 md:flex md:items-center md:justify-between text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} Nerine Harbor. Educational content only.</p>
           <p className="max-w-2xl md:text-right text-balance">
-            Disclaimer: Information on this site is for educational purposes and is not legal, medical, or psychological advice. In an emergency, dial 911.
+            Disclaimer: Information on this site is for educational purposes only and is not legal, medical, or psychological advice. No liability is assumed for any loss or damage arising from use of this content. In an emergency, dial 911. See our{" "}
+            <Link to="/legal" className="underline hover:text-foreground">Legal Disclaimer</Link>.
           </p>
         </div>
       </div>
