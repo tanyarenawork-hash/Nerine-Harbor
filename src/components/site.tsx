@@ -121,7 +121,18 @@ export function SiteFooter() {
             <li><Link to="/resources" className="text-muted-foreground hover:text-foreground">Resources</Link></li>
             <li><Link to="/emergency-contacts" className="text-muted-foreground hover:text-foreground">Emergency Contacts</Link></li>
             <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
-            <li><Link to="/legal" className="text-muted-foreground hover:text-foreground">Legal Disclaimer</Link></li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-border">
+        <div className="mx-auto max-w-7xl px-6 lg:px-10 py-6">
+          <div className="text-xs font-medium uppercase tracking-wider text-charcoal/70">Legal</div>
+          <ul className="mt-3 flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <li><Link to="/privacy" className="text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
+            <li><Link to="/terms" className="text-muted-foreground hover:text-foreground">Terms of Use</Link></li>
+            <li><Link to="/disclaimer" className="text-muted-foreground hover:text-foreground">Disclaimer</Link></li>
+            <li><Link to="/accessibility" className="text-muted-foreground hover:text-foreground">Accessibility</Link></li>
+            <li><Link to="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link></li>
           </ul>
         </div>
       </div>
