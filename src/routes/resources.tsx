@@ -170,8 +170,29 @@ function Resources() {
         <div className="text-xs uppercase tracking-wider text-charcoal/70">Directory note</div>
         <p className="mt-2 text-sm text-charcoal/85 leading-relaxed max-w-3xl">
           We link to established, reputable organizations for services we don't provide ourselves —
-          including counseling, legal aid, victim advocacy, and emergency response. External links open in a new tab and do not constitute endorsement of any specific outcome.
+          including counseling, legal aid, victim advocacy, and emergency response. External links open in a new tab.
         </p>
+      </div>
+
+      <div className="mt-6 rounded-3xl border border-border bg-rose-soft/50 p-8">
+        <div className="text-xs uppercase tracking-wider text-charcoal/70">About these resources</div>
+        <div className="mt-3 text-sm text-charcoal/85 leading-relaxed max-w-3xl space-y-3">
+          <p>
+            <strong>No endorsement.</strong> Nerine Harbor does not endorse, recommend, or guarantee any specific organization, service, or outcome listed here. Links are provided solely for educational convenience.
+          </p>
+          <p>
+            <strong>Independent content.</strong> We do not control, review, or assume responsibility for the content, privacy practices, or accuracy of third-party websites. Their views and policies are their own.
+          </p>
+          <p>
+            <strong>No partnership.</strong> Inclusion in this directory does not imply a formal partnership, sponsorship, or affiliation with Nerine Harbor.
+          </p>
+          <p>
+            <strong>Accuracy.</strong> While we aim to share reliable starting points, information changes. Please verify details directly with the organization before acting on any guidance.
+          </p>
+          <p>
+            <strong>Not a substitute.</strong> These resources are educational pointers only. They do not replace professional legal, medical, psychological, or emergency services. If you are in immediate danger, please call 911 or your local emergency number.
+          </p>
+        </div>
       </div>
 
       <CalloutDisclaimer />
