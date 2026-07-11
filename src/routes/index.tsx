@@ -6,10 +6,10 @@ import heroImg from "@/assets/hero.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nerine Harbor — Knowledge Creates Confidence" },
+      { title: "Nerine Harbor : Knowledge Creates Confidence" },
       { name: "description", content: "Educational safety, preparedness, and awareness resources empowering women through practical knowledge and trusted information." },
-      { property: "og:title", content: "Nerine Harbor — Knowledge Creates Confidence" },
-      { property: "og:description", content: "Educational safety, preparedness, and awareness resources for women." },
+      { property: "og:title", content: "Nerine Harbor : Knowledge Creates Confidence" },
+      { property: "og:description", content: "Educational safety, preparedness, and awareness resources empowering women through practical knowledge and trusted information." },
       { property: "og:image", content: heroImg },
       { name: "twitter:image", content: heroImg },
     ],
