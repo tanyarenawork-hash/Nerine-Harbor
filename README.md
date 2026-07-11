@@ -1,4 +1,4 @@
-# Nerine Harbor 🌊: Knowledge Creates Confidence
+# Nerine Harbor 🌸: Knowledge Creates Confidence
 
 Nerine Harbor is a dedicated platform providing educational resources focused on empowering women through practical knowledge, safety planning, and trusted information. It aims to build confidence by offering approachable and well-organized content on essential safety and preparedness topics.
 
