@@ -81,6 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Nerine Harbor : Knowledge Creates Confidence" },
       { name: "description", content: "Educational safety, preparedness, and awareness resources empowering women through practical knowledge and trusted information." },
       { name: "author", content: "Nerine Harbor" },
+      { name: "google-site-verification", content: "QhfXIvFkWc7akW2KpTxowWFWsYkZHX25U7-rXJp1SFk" },
       { property: "og:title", content: "Nerine Harbor : Knowledge Creates Confidence" },
       { property: "og:description", content: "Educational safety, preparedness, and awareness resources empowering women through practical knowledge and trusted information." },
       { property: "og:type", content: "website" },
