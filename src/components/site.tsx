@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X, Anchor } from "lucide-react";
+import { HeaderRibbon, FooterRibbon } from "./awareness";
 
 const navLinks = [
   { to: "/", label: "Home" },
@@ -26,6 +27,7 @@ export function SiteHeader() {
             <Anchor className="h-4 w-4 text-charcoal" strokeWidth={1.5} />
           </span>
           <span className="font-display text-lg tracking-tight text-charcoal">Nerine Harbor</span>
+          <HeaderRibbon />
         </Link>
 
         <nav className="hidden xl:flex items-center gap-1 text-sm">
@@ -103,6 +105,7 @@ export function SiteFooter() {
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
             Educational resources that empower women through safety knowledge, preparedness, and trusted community information.
           </p>
+          <FooterRibbon />
         </div>
         <div>
           <div className="text-xs font-medium uppercase tracking-wider text-charcoal/70">Learn</div>

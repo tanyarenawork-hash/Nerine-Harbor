@@ -38,6 +38,8 @@
   --color-charcoal: var(--charcoal);
   --color-gold: var(--gold);
   --color-gold-soft: var(--gold-soft);
+  --color-pink-ribbon: var(--pink-ribbon);
+  --color-pink-ribbon-soft: var(--pink-ribbon-soft);
   --font-display: "Fraunces", Georgia, serif;
   --font-sans: "Inter", system-ui, sans-serif;
 }
@@ -81,6 +83,8 @@
   --charcoal: oklch(0.24 0.015 280);
   --gold: oklch(0.74 0.09 80);
   --gold-soft: oklch(0.92 0.04 85);
+  --pink-ribbon: oklch(0.7 0.16 355);
+  --pink-ribbon-soft: oklch(0.96 0.03 355);
 
   --gradient-hero: linear-gradient(135deg, oklch(0.97 0.025 320) 0%, oklch(0.96 0.03 15) 50%, oklch(0.98 0.02 85) 100%);
   --gradient-soft: linear-gradient(180deg, oklch(0.98 0.015 320) 0%, oklch(1 0 0) 100%);

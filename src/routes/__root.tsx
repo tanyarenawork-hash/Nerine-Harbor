@@ -12,6 +12,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SiteHeader, SiteFooter, DisclaimerBanner } from "../components/site";
+import { AwarenessStrip } from "../components/awareness";
 
 function NotFoundComponent() {
   return (
@@ -124,6 +125,7 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       <div className="min-h-screen flex flex-col">
+        <AwarenessStrip />
         <DisclaimerBanner />
         <SiteHeader />
         <main className="flex-1">
