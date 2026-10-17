@@ -1,6 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ShieldCheck, BookOpen, Compass, GraduationCap, Wifi, Heart, Users, Download, Sparkles, ArrowRight } from "lucide-react";
 import { FeatureCard, CalloutDisclaimer } from "@/components/site";
+import { AwarenessCard } from "@/components/awareness";
 import heroImg from "@/assets/hero.jpg";
 
 export const Route = createFileRoute("/")({
@@ -84,6 +85,8 @@ function Home() {
           ))}
         </div>
       </section>
+
+      <AwarenessCard />
 
       {/* TOPICS */}
       <section className="mx-auto max-w-7xl px-6 lg:px-10 py-24">
