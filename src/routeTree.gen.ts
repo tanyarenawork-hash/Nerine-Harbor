@@ -9,91 +9,26 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as TravelSafetyRouteImport } from './routes/travel-safety'
-import { Route as TermsRouteImport } from './routes/terms'
-import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
-import { Route as SafetyGuidesRouteImport } from './routes/safety-guides'
-import { Route as ResourcesRouteImport } from './routes/resources'
-import { Route as PrivacyRouteImport } from './routes/privacy'
-import { Route as PreparednessRouteImport } from './routes/preparedness'
-import { Route as LegalRouteImport } from './routes/legal'
-import { Route as EmergencyContactsRouteImport } from './routes/emergency-contacts'
-import { Route as DisclaimerRouteImport } from './routes/disclaimer'
-import { Route as DigitalSafetyRouteImport } from './routes/digital-safety'
-import { Route as ContactRouteImport } from './routes/contact'
-import { Route as CampusSafetyRouteImport } from './routes/campus-safety'
-import { Route as AccessibilityRouteImport } from './routes/accessibility'
-import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AccessibilityRouteImport } from './routes/accessibility'
+import { Route as CampusSafetyRouteImport } from './routes/campus-safety'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DigitalSafetyRouteImport } from './routes/digital-safety'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
+import { Route as EmergencyContactsRouteImport } from './routes/emergency-contacts'
+import { Route as LegalRouteImport } from './routes/legal'
+import { Route as PreparednessRouteImport } from './routes/preparedness'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as ResourcesRouteImport } from './routes/resources'
+import { Route as SafetyGuidesRouteImport } from './routes/safety-guides'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as TravelSafetyRouteImport } from './routes/travel-safety'
 
-const TravelSafetyRoute = TravelSafetyRouteImport.update({
-  id: '/travel-safety',
-  path: '/travel-safety',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const TermsRoute = TermsRouteImport.update({
-  id: '/terms',
-  path: '/terms',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
-  id: '/sitemap.xml',
-  path: '/sitemap.xml',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const SafetyGuidesRoute = SafetyGuidesRouteImport.update({
-  id: '/safety-guides',
-  path: '/safety-guides',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ResourcesRoute = ResourcesRouteImport.update({
-  id: '/resources',
-  path: '/resources',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PrivacyRoute = PrivacyRouteImport.update({
-  id: '/privacy',
-  path: '/privacy',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const PreparednessRoute = PreparednessRouteImport.update({
-  id: '/preparedness',
-  path: '/preparedness',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const LegalRoute = LegalRouteImport.update({
-  id: '/legal',
-  path: '/legal',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const EmergencyContactsRoute = EmergencyContactsRouteImport.update({
-  id: '/emergency-contacts',
-  path: '/emergency-contacts',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DisclaimerRoute = DisclaimerRouteImport.update({
-  id: '/disclaimer',
-  path: '/disclaimer',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DigitalSafetyRoute = DigitalSafetyRouteImport.update({
-  id: '/digital-safety',
-  path: '/digital-safety',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ContactRoute = ContactRouteImport.update({
-  id: '/contact',
-  path: '/contact',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const CampusSafetyRoute = CampusSafetyRouteImport.update({
-  id: '/campus-safety',
-  path: '/campus-safety',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const AccessibilityRoute = AccessibilityRouteImport.update({
-  id: '/accessibility',
-  path: '/accessibility',
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AboutRoute = AboutRouteImport.update({
@@ -101,9 +36,74 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const AccessibilityRoute = AccessibilityRouteImport.update({
+  id: '/accessibility',
+  path: '/accessibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CampusSafetyRoute = CampusSafetyRouteImport.update({
+  id: '/campus-safety',
+  path: '/campus-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DigitalSafetyRoute = DigitalSafetyRouteImport.update({
+  id: '/digital-safety',
+  path: '/digital-safety',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EmergencyContactsRoute = EmergencyContactsRouteImport.update({
+  id: '/emergency-contacts',
+  path: '/emergency-contacts',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LegalRoute = LegalRouteImport.update({
+  id: '/legal',
+  path: '/legal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PreparednessRoute = PreparednessRouteImport.update({
+  id: '/preparedness',
+  path: '/preparedness',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResourcesRoute = ResourcesRouteImport.update({
+  id: '/resources',
+  path: '/resources',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafetyGuidesRoute = SafetyGuidesRouteImport.update({
+  id: '/safety-guides',
+  path: '/safety-guides',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelSafetyRoute = TravelSafetyRouteImport.update({
+  id: '/travel-safety',
+  path: '/travel-safety',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -240,102 +240,11 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/travel-safety': {
-      id: '/travel-safety'
-      path: '/travel-safety'
-      fullPath: '/travel-safety'
-      preLoaderRoute: typeof TravelSafetyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/terms': {
-      id: '/terms'
-      path: '/terms'
-      fullPath: '/terms'
-      preLoaderRoute: typeof TermsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/sitemap.xml': {
-      id: '/sitemap.xml'
-      path: '/sitemap.xml'
-      fullPath: '/sitemap.xml'
-      preLoaderRoute: typeof SitemapDotxmlRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/safety-guides': {
-      id: '/safety-guides'
-      path: '/safety-guides'
-      fullPath: '/safety-guides'
-      preLoaderRoute: typeof SafetyGuidesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/resources': {
-      id: '/resources'
-      path: '/resources'
-      fullPath: '/resources'
-      preLoaderRoute: typeof ResourcesRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/privacy': {
-      id: '/privacy'
-      path: '/privacy'
-      fullPath: '/privacy'
-      preLoaderRoute: typeof PrivacyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/preparedness': {
-      id: '/preparedness'
-      path: '/preparedness'
-      fullPath: '/preparedness'
-      preLoaderRoute: typeof PreparednessRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/legal': {
-      id: '/legal'
-      path: '/legal'
-      fullPath: '/legal'
-      preLoaderRoute: typeof LegalRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/emergency-contacts': {
-      id: '/emergency-contacts'
-      path: '/emergency-contacts'
-      fullPath: '/emergency-contacts'
-      preLoaderRoute: typeof EmergencyContactsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/disclaimer': {
-      id: '/disclaimer'
-      path: '/disclaimer'
-      fullPath: '/disclaimer'
-      preLoaderRoute: typeof DisclaimerRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/digital-safety': {
-      id: '/digital-safety'
-      path: '/digital-safety'
-      fullPath: '/digital-safety'
-      preLoaderRoute: typeof DigitalSafetyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/contact': {
-      id: '/contact'
-      path: '/contact'
-      fullPath: '/contact'
-      preLoaderRoute: typeof ContactRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/campus-safety': {
-      id: '/campus-safety'
-      path: '/campus-safety'
-      fullPath: '/campus-safety'
-      preLoaderRoute: typeof CampusSafetyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/accessibility': {
-      id: '/accessibility'
-      path: '/accessibility'
-      fullPath: '/accessibility'
-      preLoaderRoute: typeof AccessibilityRouteImport
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/about': {
@@ -345,11 +254,102 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/accessibility': {
+      id: '/accessibility'
+      path: '/accessibility'
+      fullPath: '/accessibility'
+      preLoaderRoute: typeof AccessibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/campus-safety': {
+      id: '/campus-safety'
+      path: '/campus-safety'
+      fullPath: '/campus-safety'
+      preLoaderRoute: typeof CampusSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/digital-safety': {
+      id: '/digital-safety'
+      path: '/digital-safety'
+      fullPath: '/digital-safety'
+      preLoaderRoute: typeof DigitalSafetyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/emergency-contacts': {
+      id: '/emergency-contacts'
+      path: '/emergency-contacts'
+      fullPath: '/emergency-contacts'
+      preLoaderRoute: typeof EmergencyContactsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/legal': {
+      id: '/legal'
+      path: '/legal'
+      fullPath: '/legal'
+      preLoaderRoute: typeof LegalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/preparedness': {
+      id: '/preparedness'
+      path: '/preparedness'
+      fullPath: '/preparedness'
+      preLoaderRoute: typeof PreparednessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resources': {
+      id: '/resources'
+      path: '/resources'
+      fullPath: '/resources'
+      preLoaderRoute: typeof ResourcesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safety-guides': {
+      id: '/safety-guides'
+      path: '/safety-guides'
+      fullPath: '/safety-guides'
+      preLoaderRoute: typeof SafetyGuidesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel-safety': {
+      id: '/travel-safety'
+      path: '/travel-safety'
+      fullPath: '/travel-safety'
+      preLoaderRoute: typeof TravelSafetyRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
